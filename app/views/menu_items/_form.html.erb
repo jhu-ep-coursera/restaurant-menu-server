@@ -1,0 +1,49 @@
+<%= form_for(@menu_item) do |f| %>
+  <% if @menu_item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@menu_item.errors.count, "error") %> prohibited this menu_item from being saved:</h2>
+
+      <ul>
+      <% @menu_item.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :short_name %><br>
+    <%= f.text_field :short_name %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :price_small %><br>
+    <%= f.text_field :price_small %>
+  </div>
+  <div class="field">
+    <%= f.label :price_large %><br>
+    <%= f.text_field :price_large %>
+  </div>
+  <div class="field">
+    <%= f.label :small_portion_name %><br>
+    <%= f.text_field :small_portion_name %>
+  </div>
+  <div class="field">
+    <%= f.label :large_portion_name %><br>
+    <%= f.text_field :large_portion_name %>
+  </div>
+  <div class="field">
+    <%= f.label :category_id %><br>
+    <%= f.text_field :category_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
