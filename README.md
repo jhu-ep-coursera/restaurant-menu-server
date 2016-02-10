@@ -9,9 +9,9 @@ This is the backend to the restaurant app.
 
 # URL patterns
 
-1. Show me all categories (http://<host>/categories.json)
-3. Show me all menu items (http://<host>/menu_items.json)
-5. Show me all menu items for a specific category together with info about that category (http://host/menu_items.json?category=category)
+1. Show me all categories (`http://<host>/categories.json`)
+3. Show me all menu items (`http://<host>/menu_items.json`)
+5. Show me all menu items for a specific category together with info about that category (`http://<host>/menu_items.json?category=<category>`)
 
 # Deployed at Heroku
 
