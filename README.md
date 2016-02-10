@@ -23,10 +23,10 @@ This is the backend to the restaurant app.
 
 1. Make sure you have Ruby on Rails 4.2.3+ installed. (Do you need a Ruby on Rails introduction? You can find one [here](https://www.coursera.org/learn/ruby-on-rails-intro).)
 2. Clone this repo from Github
-3. `$ bundle --without production`
-4. `$ rake db:migrate`
-5. `$ rake db:seed`
-6. `$ rails server`
+3. `bundle --without production`
+4. `rake db:migrate`
+5. `rake db:seed`
+6. `rails server`
 
 You should now be able to access the following URLs locally:
 
